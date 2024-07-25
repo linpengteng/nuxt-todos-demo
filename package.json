@@ -2,10 +2,10 @@
   "private": true,
   "scripts": {
     "dev": "nuxi dev",
+    "lint": "eslint .",
     "build": "nuxi build",
     "preview": "nuxt preview",
     "db:generate": "drizzle-kit generate",
-    "lint": "eslint .",
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
@@ -26,5 +26,6 @@
     "eslint": "^9.5.0",
     "typescript": "5.5.2",
     "wrangler": "^3.62.0"
-  }
+  },
+  "packageManager": "pnpm@9.6.0+sha1.65cd48c20dd329b7f455088b6dd17d4d5b6d02e3"
 }

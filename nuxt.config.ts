@@ -1,18 +1,16 @@
 export default defineNuxtConfig({
-  future: { compatibilityVersion: 4 },
+  devtools: {
+    enabled: true
+  },
+  future: {
+    compatibilityVersion: 4
+  },
   modules: [
-    '@nuxthub/core',
-    '@nuxt/ui',
     'nuxt-auth-utils',
-    '@nuxt/eslint'
+    '@nuxthub/core',
+    '@nuxt/eslint',
+    '@nuxt/ui'
   ],
-  hub: {
-    database: true
-  },
-  ui: {
-    icons: ['heroicons', 'simple-icons']
-  },
-  // Development config
   eslint: {
     config: {
       stylistic: {
@@ -21,7 +19,13 @@ export default defineNuxtConfig({
       }
     }
   },
-  devtools: {
-    enabled: true
+  hub: {
+    database: true
+  },
+  ui: {
+    icons: [
+      'heroicons',
+      'simple-icons'
+    ]
   }
 })

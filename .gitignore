@@ -1,10 +1,12 @@
 node_modules
 *.log
 .nuxt
-nuxt.d.ts
+.nuxt
 .output
 .env
 .history
+.DS_Store
+script.bash
 db.sqlite
 dist
 .vercel
